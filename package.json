@@ -1,0 +1,23 @@
+{
+  "name": "jsboilerplate",
+  "version": "1.0.0",
+  "description": "JS Starter Kit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Spaseski/JSBoilerplate.git"
+  },
+  "keywords": [
+    "JS",
+    "StarterKit"
+  ],
+  "author": "Aleksandar Spaseski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spaseski/JSBoilerplate/issues"
+  },
+  "homepage": "https://github.com/Spaseski/JSBoilerplate#readme"
+}
