@@ -4,5 +4,4 @@ class Startup {
         return 0;
     }
 }
-
 Startup.main();
