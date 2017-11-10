@@ -4,9 +4,9 @@
   "description": "JS Starter Kit",
   "main": "index.js",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
+    "prestart": "node scripts/startMessage.js",
     "start": "npm-run-all --parallel security-check dev-deploy",
-    "dev-deploy": "node buildScripts/srcServer.js",
+    "dev-deploy": "node scripts/webServer.js",
     "security-check": "nsp check",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
