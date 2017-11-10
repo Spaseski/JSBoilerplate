@@ -4,8 +4,11 @@
   "description": "JS Starter Kit",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node buildScripts/srcServer.js"
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel security-check dev-deploy",
+    "dev-deploy": "node buildScripts/srcServer.js",
+    "security-check": "nsp check",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,10 @@
   },
   "homepage": "https://github.com/Spaseski/JSBoilerplate#readme",
   "dependencies": {
+    "chalk": "^2.3.0",
     "express": "^4.16.2",
-    "open": "0.0.5"
+    "open": "0.0.5",
+    "npm-run-all": "^4.1.2",
+    "nsp": "^3.1.0"
   }
 }
