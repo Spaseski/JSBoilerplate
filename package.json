@@ -4,8 +4,9 @@
   "description": "JS Starter Kit",
   "main": "index.js",
   "scripts": {
-    "start-message" : "node scripts/startMessage.js",
-    "prestart": "node scripts/startMessage.js",
+    "build": "tsc -p ./",
+    "start-message": "node scripts/startMessage.js",
+    "prestart": "npm-run-all --parallel build start-message",
     "start": "npm-run-all --parallel security-check dev-deploy",
     "dev-deploy": "node scripts/webServer.js",
     "security-check": "nsp check",
@@ -28,6 +29,7 @@
   "dependencies": {
     "chalk": "^2.3.0",
     "express": "^4.16.2",
+    "now": "^8.4.0",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.1.0",
     "open": "0.0.5",
