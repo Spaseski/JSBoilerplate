@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc -p ./",
     "start-message": "node scripts/startMessage.js",
-    "prestart": "npm-run-all --parallel build start-message",
+    "prestart": "npm run start-message",
     "start": "npm-run-all --parallel security-check dev-deploy",
     "dev-deploy": "node scripts/webServer.js",
     "security-check": "nsp check",
@@ -32,7 +32,11 @@
     "now": "^8.4.0",
     "npm-run-all": "^4.1.2",
     "nsp": "^3.1.0",
+    "numeral": "^2.0.6",
     "open": "0.0.5",
-    "typescript": "^2.6.1"
+    "ts-loader": "^3.1.1",
+    "typescript": "^2.6.1",
+    "webpack": "^3.8.1",
+    "webpack-dev-middleware": "^1.12.0"
   }
 }
