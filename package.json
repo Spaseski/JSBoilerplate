@@ -9,7 +9,7 @@
     "lint:watch": "npm run lint -- --watch",
     "start-message": "node scripts/startMessage.js",
     "prestart": "npm run start-message",
-    "start": "npm-run-all --parallel security-check dev-deploy",
+    "start": "npm-run-all --parallel security-check dev-deploy lint:watch",
     "dev-deploy": "node scripts/webServer.js",
     "security-check": "nsp check",
     "test": "echo \"Error: no test specified\" && exit 1"
